@@ -1,0 +1,12 @@
+EXEXCUTIVE SUMMARY
+
+We set out to explore the King’s County Housing dataset from 2014-2015 and, hopefully, draw out some interesting conclusions. 
+
+Initially we explored and cleaned the data accordingly. We caught anomalies and transformed some data whereby without said transformation we would encounter either problems when attempting to code and run our analysis or problematic results that are bias and shouldn’t interpreted. 
+
+We began by running a basic regression on which we would develop future analysis. After tinkering with it by rejecting regressors with P-values > 0.05 and swapping regressors for others that improved our R - squared. 
+
+Subsequently we set on two main paths in our analysis. The first was based on finding the effect of bedrooms and bathrooms on price. We also combined those two variables into one rooms variable as regressing the two together against price would bring round issues of multicollinearity. We found all three to be significant and positive in our regressions.
+
+Our second avenue of analysis was to determine if richer zip codes are structurally different to poorer postcodes. We grouped houses by their respective postcodes and then split the top and bottom quartiles with respect to average price of the zip codes. We ran a stepwise selection process of the parameters and found that it marginally improved our R - squared values but didn’t produce overly different regressions that those which we had theorised, with the exception of yr_built vs yr_renovated being highlighted by the stepwise process for top end vs bottom end respectively. 
+
